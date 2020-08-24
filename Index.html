@@ -6,14 +6,15 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <script src="https://kit.fontawesome.com/8c1dacc4b5.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="JavaScript/direcciones.js"></script>
     <title>FURNITURE |</title>
     <style>
   .grid-container {
     display: grid;
-    align-content: center;
-    grid-template-columns: auto auto auto;
-    grid-gap: 10px;
-    padding: 10px;
+    grid-template-columns: auto auto auto auto;
     }
     </style>
   </head>
@@ -21,87 +22,100 @@
     <header>
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
   <a class="navbar-brand" href="index.html"><h1><i class="fab fa-angellist"></i> furniture</h1></a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse"
-   data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
   <div class="collapse navbar-collapse" id="navbarColor01">
     <ul class="navbar-nav mr-auto">
       <li class="nav-item active">
-        <a class="nav-link" href="index.html"><i class="fas fa-home"></i> Home<span class="sr-only">(current)</span></a>
+        <a class="nav-link" href="#" id="home"><i class="fas fa-home"></i> Home<span class="sr-only">(current)</span></a>
       </li>
-      <!-- Muebles -->
+      <!-- Muebles exclusivos -->
       <li class="nav-item dropdown show">
-        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Muebles</a>
+        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Muebles exclusivos</a>
         <div class="dropdown-menu">
-        <a class="dropdown-item" href="#">Reclinables</a>
+        <a class="dropdown-item" href="#">Juego de dormitorio</a>
         <div class="dropdown-divider"></div>
-        <a class="dropdown-item" href="#">Sofá cama</a>
+        <a class="dropdown-item" href="#">Juego de salas</a>
         <div class="dropdown-divider"></div>
-        <a class="dropdown-item" href="#">Infantiles</a>
-        <div class="dropdown-divider"></div>
-        <a class="dropdown-item" href="#">Muebles de TV</a>
-        <div class="dropdown-divider"></div>
-        <a class="dropdown-item" href="#">Bar</a>
-        <div class="dropdown-divider"></div>
-        <a class="dropdown-item" href="#">Muebeles para cocina</a>
-        <div class="dropdown-divider"></div>
-        <a class="dropdown-item" href="#">Novedades</a>
+        <a class="dropdown-item" href="#">Juego de comedor</a>
         </div>
       </li>
-      <!-- Bebes -->
+      <!-- Salas -->
       <li class="nav-item dropdown show">
-        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Bebes</a>
+        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Salas</a>
         <div class="dropdown-menu">
-        <a class="dropdown-item" href="#">Cunas</a>
+        <a class="dropdown-item" href="#">Juego de sala</a>
         <div class="dropdown-divider"></div>
-        <a class="dropdown-item" href="#">Cunas de viaje y bambineto</a>
+        <a class="dropdown-item" href="#">Centro de entretenimiento</a>
         <div class="dropdown-divider"></div>
-        <a class="dropdown-item" href="#">Carriolas</a>
+        <a class="dropdown-item" href="#">Sofa</a>
         <div class="dropdown-divider"></div>
-        <a class="dropdown-item" href="#">Autoacientos y porta bebes</a>
+        <a class="dropdown-item" href="#">Sillones y butacas</a>
+        <div class="dropdown-divider"></div>
+        <a class="dropdown-item" href="#">Mesas de centro</a>
         <div class="dropdown-divider"></div>
         <a class="dropdown-item" href="#">Mesedoras</a>
         <div class="dropdown-divider"></div>
-        <a class="dropdown-item" href="#">Colchones</a>
+        <a class="dropdown-item" href="#">Vitrinas</a>
         <div class="dropdown-divider"></div>
-        <a class="dropdown-item" href="#">Pañaleras</a>
-        <div class="dropdown-divider"></div>
-        <a class="dropdown-item" href="#">Novedades</a>
+        <a class="dropdown-item" href="#">Accesorios de sala</a>
+        <a class="dropdown-item" href="#">Ofertas</a>
         </div>
       </li>
-      <!-- Colchones -->
+      <!-- Comedores -->
       <li class="nav-item dropdown show">
-        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Colchones</a>
+        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Comedores</a>
         <div class="dropdown-menu">
-          <a class="dropdown-item" href="#">Colchones</a>
+          <a class="dropdown-item" href="#">Juego de comedor</a>
           <div class="dropdown-divider"></div>
-        <a class="dropdown-item" href="#">Box</a>
+          <a class="dropdown-item" href="#">Mesas para comedor</a>
+          <div class="dropdown-divider"></div>
+        <a class="dropdown-item" href="#">Sillas para comedor</a>
         <div class="dropdown-divider"></div>
-        <a class="dropdown-item" href="#">Juego</a>
-        <div class="dropdown-divider"></div>
-        <a class="dropdown-item" href="#">Complementos</a>
-        </div>
-      </li>
-      <!-- Decoracion -->
-      <li class="nav-item dropdown show">
-        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Decoracion</a>
-        <div class="dropdown-menu">
-        <a class="dropdown-item" href="#">Estructuras y figuras</a>
-        <div class="dropdown-divider"></div>
-        <a class="dropdown-item" href="#">Portaretratos</a>
-        <div class="dropdown-divider"></div>
-        <a class="dropdown-item" href="#">Cuadros</a>
-        <div class="dropdown-divider"></div>
-        <a class="dropdown-item" href="#">Espejos</a>
-        <div class="dropdown-divider"></div>
-        <a class="dropdown-item" href="#">Cojines</a>
+        <a class="dropdown-item" href="#">Muebles de bar</a>
         <div class="dropdown-divider"></div>
         <a class="dropdown-item" href="#">Floreros y jarrones</a>
         <div class="dropdown-divider"></div>
-        <a class="dropdown-item" href="#">Tapetes</a>
+        <a class="dropdown-item" href="#">Ofertas</a>
+        </div>
+      </li>
+      <!-- Dormitorios -->
+      <li class="nav-item dropdown show">
+        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Dormitorios</a>
+        <div class="dropdown-menu">
+        <a class="dropdown-item" href="#">Juego de dormitorio</a>
         <div class="dropdown-divider"></div>
-        <a class="dropdown-item" href="#">Lamparas</a>
+        <a class="dropdown-item" href="#">Veladores</a>
+        <div class="dropdown-divider"></div>
+        <a class="dropdown-item" href="#">Caveseras</a>
+        <div class="dropdown-divider"></div>
+        <a class="dropdown-item" href="#">Ropero</a>
+        <div class="dropdown-divider"></div>
+        <a class="dropdown-item" href="#">Zapatera</a>
+        <div class="dropdown-divider"></div>
+        <a class="dropdown-item" href="#">Comodas</a>
+        <div class="dropdown-divider"></div>
+        <a class="dropdown-item" href="#">Joyeros</a>
+        <div class="dropdown-divider"></div>
+        <a class="dropdown-item" href="#">Espejos</a>
+        <div class="dropdown-divider"></div>
+        <a class="dropdown-item" href="#">Ofertas</a>
+        </div>
+      </li>
+      <!-- Ofisinas -->
+      <li class="nav-item dropdown show">
+        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Ofisinas</a>
+        <div class="dropdown-menu">
+        <a class="dropdown-item" href="#">Sillas</a>
+        <div class="dropdown-divider"></div>
+        <a class="dropdown-item" href="#">Repisas</a>
+        <div class="dropdown-divider"></div>
+        <a class="dropdown-item" href="#">Escritorios</a>
+        <div class="dropdown-divider"></div>
+        <a class="dropdown-item" href="#">Archivadores y estantes</a>
+        <div class="dropdown-divider"></div>
+        <a class="dropdown-item" href="#">Ofertas</a>
         </div>
       </li>
       <!-- Marcas -->
@@ -117,6 +131,10 @@
         <a class="dropdown-item" href="#">Casa grande</a>
         <div class="dropdown-divider"></div>
         <a class="dropdown-item" href="#">Muebles perú</a>
+        <div class="dropdown-divider"></div>
+        <a class="dropdown-item" href="#">YT</a>
+        <div class="dropdown-divider"></div>
+        <a class="dropdown-item" href="#">Alesus</a>
         </div>
       </li>
     </ul>
@@ -127,49 +145,14 @@
   </div>
 </nav>
 </header>
-<br>
-<div class="container">
-  <!-- Titulo -->
-  <div class="jumbotron" style="border:2px solid green;">
-    <h1 class="display-3">Muebles</h1>
-    <p class="lead">Aqui encontraras todos tipo de muebles que estas buscando.</p>
-    <hr class="my-4">
-    <p>Los tiempos cambian y los gustos también, pero la elegancia se mantiene
-      en el tiempo con detalles originales que jamas pasan de moda.<br>
-      Tu hogar es tu espacio y debe reflejar lo mejor de ti e inspira.<br>
-      Por eso es importante que tus muebles tengan materiales acogedores pero
-      también durables.</p>
-  </div>
-  <!-- Cuerpo1 -->
-  <div class="grid-container">
-    <div class="card border-primary mb-3" style="max-width: 20rem;">
-      <div class="card-header">Asiento esquinero modular Juno – Gris marga</div>
-      <img style="height: 200px; width: 100%; display: block;" src="img/Asiento-esquinero-modular-Juno-gris-marga.jpg" alt="Card image">
-      <div class="card-body">
-        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-      </div>
-    </div>
-    <div class="card border-primary mb-3" style="max-width: 20rem;">
-      <div class="card-header">Header</div>
-      <div class="card-body">
-        <img style="height: 200px; width: 100%; display: block;" src="img/Asiento-esquinero-modular-Juno-gris-marga.jpg" alt="Card image">
-        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-      </div>
-    </div>
-    <div class="card border-primary mb-3" style="max-width: 20rem;">
-      <div class="card-header">Header</div>
-      <img style="height: 200px; width: 100%; display: block;" src="img/Asiento-esquinero-modular-Juno-gris-marga.jpg" alt="Card image">
-      <div class="card-body">
-        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-      </div>
-    </div>
-  </div>
-
+<!-- Cuerpo direccionado -->
+<div class="container" id="inicio">  
 </div>
 <!-- Footer -->
-<footer class="page-footer font-small mdb-color pt-4">
+<footer class="page-footer font-small mdb-color ">
+  <hr>
   <!-- Footer Links -->
-  <div class="container text-center text-md-left">
+  <div class="text-md-left">
     <!-- Footer links -->
     <div class="row text-center text-md-left mt-3 pb-3">
       <!-- Grid column -->
@@ -189,7 +172,7 @@
           <a href="#!">YT</a>
         </p>
         <p>
-          <a href="#!">ROSEL</a>
+          <a href="#!">alesus</a>
         </p>
       </div>
       <!-- Grid column -->
@@ -221,7 +204,7 @@
         <p>
           <i class="fas fa-envelope mr-3"></i> Furniture@gmail.com</p>
         <p>
-          <i class="fas fa-phone mr-3"></i> + 05 915 026 458</p>
+          <i class="fas fa-phone mr-3"></i> + 05 915 026 45</p>
         <p>
           <i class="fas fa-print mr-3"></i> + 05 964 749 31</p>
       </div>
@@ -281,6 +264,3 @@
 </footer>
   </body>
 </html>
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
